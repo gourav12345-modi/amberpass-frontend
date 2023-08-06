@@ -1,0 +1,39 @@
+#sorting-icons span {
+  display: block !important;
+  margin-left: 10px;
+  line-height: 0;
+}
+
+#sorting-icons i{
+  line-height: 75%;
+  color: var(--blue);
+}
+
+#sorting-icons span.ag-hidden i{
+  color: var(--darkGrey);
+}
+
+.ag-selection-checkbox.ag-invisible {
+  display: none !important;
+}
+
+.ag-row-even {
+  background-color: var(--grey) !important;
+}
+
+.ag-cell-value {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.status-cell span{
+  flex: unset;
+  background-color: var(--green);
+  border-radius: 20px;
+  height: 30px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: var(--white);
+  line-height: 170%;
+  padding: 0 10px;
+}

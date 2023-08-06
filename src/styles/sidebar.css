@@ -1,0 +1,112 @@
+#sidebar-hamburger-menu {
+  position: absolute;
+  top: 20px;
+  transform: translateY(25%);
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--darkGrey);
+  display: none;
+}
+
+.sidebar {
+  width: 280px;
+  font-size: 15px;
+  overflow-y: auto;
+  height: 100vh;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.sidebar-menu-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.sidebar .branding {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.sidebar .branding img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.sidebar .option-list {
+  padding: 0 10px;
+  margin-top: 20px;
+  color: var(--darkGrey);
+  margin-bottom: 30px;
+}
+
+.sidebar .option {
+  display: flex;
+  align-items: flex-start;
+  padding:9px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar .option:hover {
+  background-color: var(--voiletBlue);
+  color: var(--white);
+}
+
+.sidebar .option p {
+  font-size: 15px;
+}
+
+.sidebar .option .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.sidebar .option .icon path {
+  stroke: var(--darkGrey);
+}
+
+.sidebar .option:hover .icon path {
+  stroke: var(--white);
+}
+
+.sidebar .option .down-icon {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1160px) {
+  .sidebar {
+    width: 200px;
+  }  
+}
+
+@media only screen and (max-width: 700px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+  } 
+  
+  #sidebar-hamburger-menu {
+    display: block;
+  }
+} 
+
+@media only screen and (max-width: 570px) {
+  #sidebar-hamburger-menu {
+    top: 10px;
+  }  
+} 
